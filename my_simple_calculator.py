@@ -1,11 +1,11 @@
 from tkinter import Tk, Button, Entry, END
 
 root = Tk()
-root.title("My Simple Calculator")
+root.title("Tkinter Simple Calculator")
 
 # Entry Field:
 
-entry = Entry(root, width=20, borderwidth=5)
+entry = Entry(root, width=20, borderwidth=3)
 entry.grid(row=0,column=0,columnspan=3, padx=10, pady=10 )
 
 # Functions:
@@ -80,7 +80,7 @@ button_7 = Button(root,text="7", padx=40, pady=20, command=lambda: click(7))
 button_8 = Button(root,text="8", padx=40, pady=20, command=lambda: click(8))
 button_9 = Button(root,text="9", padx=40, pady=20, command=lambda: click(9))
 button_equal = Button(root,text="=", padx=40, pady=20, command=equal)
-button_clear = Button(root,text="clear", padx=40, pady=20, command=clear)
+button_clear = Button(root,text="clear", padx=125, pady=20, command=clear)
 button_divide = Button(root,text="/", padx=40, pady=20, command=divide)
 button_multiply = Button(root,text="*", padx=40, pady=20, command=multiply)
 button_add = Button(root,text="+", padx=40, pady=20, command=add)
@@ -100,12 +100,11 @@ button_7.grid(row=3,column=0)
 button_8.grid(row=3,column=1)
 button_9.grid(row=3,column=2)
 button_0.grid(row=4,column=0)
-button_clear.grid(row=5,column=1)
+button_substract.grid(row=5,column=1)
 button_equal.grid(row=4,column=2)
 button_multiply.grid(row=5,column=0)
-button_divide.grid(row=5,column=1)
-button_add.grid(row=5,column=2)
 button_divide.grid(row=4,column=1)
+button_add.grid(row=5,column=2)
+button_clear.grid(row=6, columnspan=3)
 
 root.mainloop()
- 
